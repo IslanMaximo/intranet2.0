@@ -26,14 +26,15 @@ div.menu p{
     margin: 0%;
     color: white;
     padding: 5px;
-
+}
+div.menu p#menut{
+    background-color: black;
 }
 div.menu p:hover{
     background-color: rgb(143, 143, 143);
     cursor: pointer;
 }
-p.smenut{
+div.smenut, div.smenus{
     display: none;
-}p.smenus{
-    display: none;
+    background-color: rgb(143, 143, 143);
 }

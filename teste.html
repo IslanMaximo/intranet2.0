@@ -8,41 +8,49 @@
 </head>
 <body>
     <header>
-        <div id="img">
-            <img src="image/menu.png" alt="" onclick="menu('menu')">
+        <div id="img" onclick="menu('menu')">
+            <img src="image/menu.png">
         </div>
         <div id="unidades">
             <div class="menu">
-                <p onclick="menu('taunay')">Taunay</p>
-                    <p nclass="smenut">Lista Telefonica</p>
-                    <p class="smenut">Profissionais</p>
+                <p id="menut" onclick="menu('taunay')">Taunay</p>
+                    <div class="smenut">
+                        <p>Lista telefonica</p>
+                        <p>Profissionais</p>
+                    </div>
                 <p onclick="menu('sete')">Sete</p>
-                    <p class="smenus">Lista Telefonica</p>
-                    <p class="smenus">Profissionais</p>
-
+                <div class="smenus">
+                    <p>Lista telefonica</p>
+                    <p>Profissionais</p>
+                </div>
             </div>
         </div>
     </header>
     <script>
         function menu(mn){
             let menu = document.querySelector('div.menu');
-
+            
+            if(document.querySelector('div.smenut').style.display == 'block'){
+                document.querySelector('body').style.background = 'blue'
+            }else{
+                
+            }
             if(mn == 'menu' && menu.style.display == 'block'){
                 menu.style.display = 'none'
             }else{
                 menu.style.display = 'block'
             }
             //sub menu taunay-------------------------
-            if(mn == 'taunay' && document.querySelector('p.smenut').style.display == 'none'){
-                document.querySelector('p.smenut').style.display = 'block'
+            if(mn == 'taunay' && document.querySelector('div.smenut').style.display == 'none'){
+                document.querySelector('div.smenut').style.display = 'block'
             }else{
-                document.querySelector('p.smenut').style.display = 'none'
+                document.querySelector('div.smenut').style.display = 'none'
             }
             //sub menu sete-------------------------
-            if(mn == 'sete' && document.querySelector('p.smenus').style.display == 'none'){
-                document.querySelector('p.smenus').style.display = 'block'
+            if(mn == 'sete' && document.querySelector('div.smenus').style.display == 'none'){
+                document.querySelector('div.smenus').style.display = 'block'
             }else{
-                document.querySelector('p.smenus').style.display = 'none'
+                document.querySelector('div.smenus').style.display = 'none'
             }
             
         }
