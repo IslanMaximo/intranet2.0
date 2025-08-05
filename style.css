@@ -28,7 +28,7 @@ div.menu p{
     padding: 5px;
 }
 div.menu p#menut{
-    background-color: black;
+    /*---------ESTAVA COM BACKGROUND COLOR BLACK----------*/
 }
 div.menu p:hover{
     background-color: rgb(143, 143, 143);
