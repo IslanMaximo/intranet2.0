@@ -74,5 +74,4 @@ function carregamento(){
         <abbr title="HOME"><a href=""><img src="image/home.png" alt="HOME"></a></abbr>
         <abbr title="Galeria"><a href="galeria/principal.html"><img src="image/galeria.png" alt="Perguntas"></a></abbr>
     </footer>`
-
 }
