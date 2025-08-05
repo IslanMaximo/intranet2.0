@@ -5,7 +5,13 @@ function carregamento(){
     let footer = document.querySelector('footer.principal')
 
     //header----------------------------------------
-    header.innerHTML = `<div id="navegacao">
+    header.innerHTML = `
+                <div id="navegacao">
+                <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                </div>
                 <nav>
                     <ul class="menu">
                         <li>

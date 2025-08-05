@@ -19,51 +19,31 @@
 }
 
 /*-----------Header-----------*/
-
-div#navegacao {
-    margin-top: 10px;
-    padding-bottom: 10px;
+div#navegacao{
     width: 100%;
-    min-height: 50px;
-    max-width: 100%; 
-}
-nav {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.171);
-    width: 100%;
-}
-nav a {
-    font-variant: small-caps;
     padding: 10px;
-    text-decoration: none;
-    color: var(--cor4);
+    background-color: grey;
 }
-nav a:hover {
-    color: var(--cor3);
-}
-ul.menu li {
-    padding: 5px;
-    margin: 7px;
-    display: inline-block;
-}
-ul.submenu {
-    background-color: var(--cor1);
-    border-radius: 20px;
-    position: absolute;
+div#navegacao ul{
     display: none;
 }
-ul.submenu li {
-    margin: 5px;
-    padding: 7px;
-    
+.menu-toggle {
+    margin: auto;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
 }
-.menu li:hover {
-    background-color: rgba(228, 228, 228, 0.452);
-    border-radius: 10px;
+
+.bar {
+    height: 4px;
+    background-color: #333;
+    border-radius: 2px;
 }
-.menu li:hover ul.submenu {
-    margin-bottom: 2px;
-    display: block;
-}
+
+
 
 /*---------- FIM DO HEADER-----------*/
 div#banner{
