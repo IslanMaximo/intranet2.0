@@ -1,1 +1,101 @@
 @charset "UTF-8";
+
+:root {
+    --cor0: white;
+    --cor1: #f7f3e4ee;
+    --cor2: #BDB180;
+    --cor3: #B09119;
+    --cor4: #000000;
+    --cor5: rgba(158, 158, 158, 0.425);
+    --cor6: rgb(201, 201, 201);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/*-----------Header-----------*/
+
+div#navegacao {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    min-height: 50px;
+    max-width: 100%; 
+}
+nav {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.171);
+    width: 100%;
+}
+nav a {
+    font-variant: small-caps;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor4);
+}
+nav a:hover {
+    color: var(--cor3);
+}
+ul.menu li {
+    padding: 5px;
+    margin: 7px;
+    display: inline-block;
+}
+ul.submenu {
+    background-color: var(--cor1);
+    border-radius: 20px;
+    position: absolute;
+    display: none;
+}
+ul.submenu li {
+    margin: 5px;
+    padding: 7px;
+    
+}
+.menu li:hover {
+    background-color: rgba(228, 228, 228, 0.452);
+    border-radius: 10px;
+}
+.menu li:hover ul.submenu {
+    margin-bottom: 2px;
+    display: block;
+}
+
+/*---------- FIM DO HEADER-----------*/
+div#banner{
+    height: 183px;
+    width: 100%;
+    background-color: #000000;
+}
+div#banner img{
+    width: 80%;
+    height: 100%;
+}
+/* ----------footer-----------*/
+
+footer{
+    margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: #000000;
+    min-height: 50px;
+    max-height: 150px;
+    width: 100vw;
+}
+footer  img {
+    display: inline-block;
+    margin: 0px 15px;
+    width: 50px;
+    height: 50px;
+}
+footer img:hover {
+    width: 53px;
+    height: 53px;
+    transition-duration: 0.3s;
+}
+/* ----------FIM footer-----------*/

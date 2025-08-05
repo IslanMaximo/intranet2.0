@@ -1,4 +1,5 @@
 window.onload = carregamento()
+let banner = document.querySelector('div#banner')
 function carregamento(){
     let header = document.querySelector('header.principal')
     let footer = document.querySelector('footer.principal')
@@ -67,8 +68,8 @@ function carregamento(){
                 </nav>
             </div>`
 
-            // foooter-----------------------
-            footer.innerHTML = `<footer>       
+    // foooter-----------------------
+    footer.innerHTML = `<footer>       
         <abbr title="T.i"><a href="informatica/pricipal.html"><img src="image/t.i.png" alt="Informatica"></a></abbr>
         <abbr title="HOME"><a href=""><img src="image/home.png" alt="HOME"></a></abbr>
         <abbr title="Galeria"><a href="galeria/principal.html"><img src="image/galeria.png" alt="Perguntas"></a></abbr>
