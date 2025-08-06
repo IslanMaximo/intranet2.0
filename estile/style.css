@@ -99,11 +99,14 @@ input.park{
     margin: 30px auto;
     width: 50%;
     height: 100px;
+    font-size: 2em;
     border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.87);
 }
 input.park:hover{
+    background-color: green;
+    color: red;
 }
 
 /* ----------footer-----------*/
