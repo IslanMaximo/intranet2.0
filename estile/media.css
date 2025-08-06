@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+---------------------------
+pequenas telas : até 600px;
+cel : até 768px
+tablet : até 992px
+pc até 1200px
+grandes telas acima de 1200px */
+
+@media screen and (min-width: 600px) {
+    body{
+        background-color: black;
+    }
+}

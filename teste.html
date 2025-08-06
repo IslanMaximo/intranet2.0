@@ -19,10 +19,30 @@
                         <p>Profissionais</p>
                     </div>
                 <p onclick="menu('sete')">Sete</p>
-                <div class="smenus">
-                    <p>Lista telefonica</p>
-                    <p>Profissionais</p>
-                </div>
+                    <div class="smenus">
+                        <p>Lista telefonica</p>
+                        <p>Profissionais</p>
+                    </div>
+                <p onclick="menu('cabral')">Cabral</p>
+                    <div class="smenuc">
+                        <p>Lista telefonica</p>
+                        <p>Profissionais</p>
+                    </div>
+                <p onclick="menu('juveve')">Juveve</p>
+                    <div class="smenuj">
+                        <p>Lista telefonica</p>
+                        <p>Profissionais</p>
+                    </div>
+                <p onclick="menu('bariguim')">Bariguim</p>
+                    <div class="smenubm">
+                        <p>Lista telefonica</p>
+                        <p>Profissionais</p>
+                    </div>
+                <p onclick="menu('patiom')">Pátio</p>
+                    <div class="smenupm">
+                        <p>Lista telefonica</p>
+                        <p>Profissionais</p>
+                    </div>
             </div>
         </div>
     </header>
@@ -30,11 +50,6 @@
         function menu(mn){
             let menu = document.querySelector('div.menu');
             
-            if(document.querySelector('div.smenut').style.display == 'block'){
-
-            }else{
-                
-            }
             if(mn == 'menu' && menu.style.display == 'block'){
                 menu.style.display = 'none'
             }else{
@@ -51,6 +66,31 @@
                 document.querySelector('div.smenus').style.display = 'block'
             }else{
                 document.querySelector('div.smenus').style.display = 'none'
+            }
+            //sub menu cabral-------------------------
+            if(mn == 'cabral' && document.querySelector('div.smenuc').style.display == 'none'){
+                document.querySelector('div.smenuc').style.display = 'block'
+            }else{
+                document.querySelector('div.smenuc').style.display = 'none'
+            }
+            //sub barigui men-------------------------
+            if(mn == 'bariguim' && document.querySelector('div.smenubm').style.display == 'none'){
+                document.querySelector('div.smenubm').style.display = 'block'
+            }else{
+                document.querySelector('div.smenubm').style.display = 'none'
+            }
+            //sub menu juveve-------------------------
+            if(mn == 'juveve' && document.querySelector('div.smenuj').style.display == 'none'){
+                document.querySelector('div.smenuj').style.display = 'block'
+            }else{
+                document.querySelector('div.smenuj').style.display = 'none'
+            }
+            
+            //sub menu patio men-------------------------
+            if(mn == 'patiom' && document.querySelector('div.smenupm').style.display == 'none'){
+                document.querySelector('div.smenupm').style.display = 'block'
+            }else{
+                document.querySelector('div.smenupm').style.display = 'none'
             }
             
         }

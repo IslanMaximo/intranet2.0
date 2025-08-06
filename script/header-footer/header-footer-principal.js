@@ -1,83 +1,57 @@
-window.onload = carregamento()
-let banner = document.querySelector('div#banner')
-function carregamento(){
-    let header = document.querySelector('header.principal')
-    let footer = document.querySelector('footer.principal')
+window.onload = carregar()
 
-    //header----------------------------------------
-    header.innerHTML = `
-                <div id="navegacao">
-                <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                </div>
-                <nav>
-                    <ul class="menu">
-                        <li>
-                            <a href="unidades/taunay/taunay.html">Taunay</a>
-                            <ul class="submenu">
-                                <li>
-                                    3091-8686            
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Patio</a>
-                            <ul class="submenu">
-                                <li>
-                                    3030-7676            
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Sete</a>
-                            <ul class="submenu">
-                                <li>
-                                    3242-3963            
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Cabral</a>
-                            <ul class="submenu">
-                                <li>
-                                    3254-4224            
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Juveve</a>
-                            <ul class="submenu">
-                                <li>
-                                    3254-6621            
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Patio Men</a>
-                            <ul class="submenu">
-                                <li>
-                                    99774-0026            
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Barigui</a>
-                            <ul class="submenu">
-                                <li>
-                                    99771-0437            
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Barigui Men</a>
-                            <ul class="submenu">
-                                <li>
-                                    3441-0211            
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>`
+let footer = document.querySelector('footer.principal')
 
+function menu(mn){
+    let menu = document.querySelector('div.menu');
+    
+    if(mn == 'menu' && menu.style.display == 'block'){
+        menu.style.display = 'none'
+    }else{
+        menu.style.display = 'block'
+    }
+    //sub menu taunay-------------------------
+    if(mn == 'taunay' && document.querySelector('div.smenut').style.display == 'none'){
+        document.querySelector('div.smenut').style.display = 'block'
+    }else{
+        document.querySelector('div.smenut').style.display = 'none'
+    }
+    //sub menu sete-------------------------
+    if(mn == 'sete' && document.querySelector('div.smenus').style.display == 'none'){
+        document.querySelector('div.smenus').style.display = 'block'
+    }else{
+        document.querySelector('div.smenus').style.display = 'none'
+    }
+    //sub menu cabral-------------------------
+    if(mn == 'cabral' && document.querySelector('div.smenuc').style.display == 'none'){
+        document.querySelector('div.smenuc').style.display = 'block'
+    }else{
+        document.querySelector('div.smenuc').style.display = 'none'
+    }
+    //sub barigui men-------------------------
+    if(mn == 'bariguim' && document.querySelector('div.smenubm').style.display == 'none'){
+        document.querySelector('div.smenubm').style.display = 'block'
+    }else{
+        document.querySelector('div.smenubm').style.display = 'none'
+    }
+    //sub menu juveve-------------------------
+    if(mn == 'juveve' && document.querySelector('div.smenuj').style.display == 'none'){
+        document.querySelector('div.smenuj').style.display = 'block'
+    }else{
+        document.querySelector('div.smenuj').style.display = 'none'
+    }
+    
+    //sub menu patio men-------------------------
+    if(mn == 'patiom' && document.querySelector('div.smenupm').style.display == 'none'){
+        document.querySelector('div.smenupm').style.display = 'block'
+    }else{
+        document.querySelector('div.smenupm').style.display = 'none'
+    }           
+}
+function carregar(){
     // foooter-----------------------
-    footer.innerHTML = `<footer>       
+    footer.innerHTML = `       
         <abbr title="T.i"><a href="informatica/pricipal.html"><img src="image/t.i.png" alt="Informatica"></a></abbr>
         <abbr title="HOME"><a href=""><img src="image/home.png" alt="HOME"></a></abbr>
-        <abbr title="Galeria"><a href="galeria/principal.html"><img src="image/galeria.png" alt="Perguntas"></a></abbr>
-    </footer>`
+        <abbr title="Galeria"><a href="galeria/principal.html"><img src="image/galeria.png" alt="Perguntas"></a></abbr>`
 }

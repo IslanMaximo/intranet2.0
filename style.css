@@ -1,9 +1,12 @@
 @charset "UTF-8";
-
+*{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
 
 header{
     width: 100vw;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.600);
 }
 div#img{
     padding: 7px 0px;
@@ -11,7 +14,7 @@ div#img{
     display: block;
     margin: auto;
 }header div#img:hover{
-    background-color: rgb(143, 143, 143);
+    background-color: rgba(143, 143, 143, 0.600);
     cursor: pointer;
 }
 div#img img{
@@ -22,19 +25,22 @@ div.menu{
     display: none;
 }
 div.menu p{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
     text-align: center;
     margin: 0%;
     color: white;
     padding: 5px;
 }
-div.menu p#menut{
-    /*---------ESTAVA COM BACKGROUND COLOR BLACK----------*/
-}
+
 div.menu p:hover{
-    background-color: rgb(143, 143, 143);
+    color: rgb(255, 213, 99);
+    font-size: 1.2em;
+    background-color: rgba(143, 143, 143, 0.600);
     cursor: pointer;
 }
-div.smenut, div.smenus{
+div.smenut, div.smenus, div.smenuc, div.smenuj, div.smenubm, div.smenupm{
     display: none;
-    background-color: rgb(143, 143, 143);
+    font-size: 0.8em;
+    background-color: rgba(143, 143, 143, 0.600);
+    
 }
