@@ -6,7 +6,7 @@
 function menu(mn){
 let menu = document.querySelector('div.menu');
 
-    if(window.innerWidth >900 ){
+    if(window.innerWidth > 800 ){
         if(mn == 'menu' && menu.style.display == 'inline-block'){
             menu.style.display = 'none'
             document.querySelector('header').style.width ='30px'

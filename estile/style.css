@@ -32,7 +32,8 @@ div#img{
 }
 div#img img{
     margin: auto;
-    display: block;
+    display: inline-flex;
+    height: 30px;
 }
 div.menu{
     display: none;
@@ -61,6 +62,11 @@ div.smenut, div.smenus, div.smenuc, div.smenuj, div.smenubm, div.smenupm{
     
 }
 /*------------------------------FIM DO HEADER------------------------------*/
+div#banner{
+        background: url('../image/Banners/baner1p.png') center center no-repeat;
+        background-size: cover;
+        height: 200px;
+    }
 
 /* ----------footer-----------*/
 

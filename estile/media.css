@@ -8,17 +8,20 @@ tablet : até 992px
 pc até 1200px
 grandes telas acima de 1200px */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
     body{
+        display: flex;
+    }    
+    header{
+        width: 30px;
+        height: 300px;
         display: flex;
     }
     div#banner{
-        background-color: black;
+        background: url('../image/Banners/baner1.png') center center no-repeat;
+        background-size: cover;
+        height: 300px;
         width:calc(100% - 30px);
-    }
-    header{
-        width: 30px;
-        display: flex;
     }
     nav{
         flex-direction: column;
