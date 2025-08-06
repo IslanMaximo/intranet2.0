@@ -12,8 +12,8 @@ let header = document.querySelector('header')
             header.style.background = 'rgba(128, 128, 128, 0.600)'
         }else{
             menu.style.display = 'inline-block'
-            header.style.width ='110px'
-            header.style.height ='285px'
+            header.style.width ='96px'
+            header.style.height ='310px'
             header.style.background = 'rgba(128, 128, 128, 0.900)'
 
         }

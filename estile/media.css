@@ -18,8 +18,8 @@ grandes telas acima de 1200px */
         height: 45px;
         display: flex;
         position: fixed;
-        top: 0%;
-        left: 0%;
+        top: 20px;
+        left: 20px;
     }
     div#banner{
         display: block;
