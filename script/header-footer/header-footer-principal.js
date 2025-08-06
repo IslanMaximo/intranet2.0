@@ -2,18 +2,20 @@
 
 function menu(mn){
 let menu = document.querySelector('div.menu');
+let header = document.querySelector('header')
 
     if(window.innerWidth > 900 ){
         if(mn == 'menu' && menu.style.display == 'inline-block'){
             menu.style.display = 'none'
-            document.querySelector('header').style.width ='30px'
-            document.querySelector('div#banner').style.width = 'calc(100% - 30px)'
-            const tela = window.innerWidth
-            console.log = (tela)
+            header.style.width ='30px'
+            header.style.height ='45px'
+            header.style.background = 'rgba(128, 128, 128, 0.600)'
         }else{
             menu.style.display = 'inline-block'
-            document.querySelector('header').style.width ='130px'
-            document.querySelector('div#banner').style.width = 'calc(100% - 130px)'
+            header.style.width ='110px'
+            header.style.height ='285px'
+            header.style.background = 'rgba(128, 128, 128, 0.900)'
+
         }
         //sub menu taunay-------------------------
             if(mn == 'taunay' && document.querySelector('div.smenut').style.display == 'none'){

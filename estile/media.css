@@ -8,23 +8,46 @@ tablet : até 992px
 pc até 1200px
 grandes telas acima de 1200px */
 
-@media screen and (min-width: 900px) {
-    body{
-        display: flex;
-    }    
+@media screen and (min-width: 900px){
     header{
+        text-align: center;
+        margin: 15px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 15px black;
         width: 30px;
-        height: 300px;
+        height: 45px;
         display: flex;
+        position: fixed;
+        top: 0%;
+        left: 0%;
     }
     div#banner{
+        display: block;
         background: url('../image/Banners/baner1.png') center center no-repeat;
         background-size: cover;
-        height: 300px;
-        width:calc(100% - 30px);
+        height: 380px;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.541);
+        width:100%;
+        margin-bottom: 50px;
     }
     nav{
         flex-direction: column;
+    }div.menu p:hover{
+        font-size: 1em;
+    }
+    main{
+        display: block;
     }
     
+}
+@media screen and(min-width: 1600px){
+    header{
+        width: 30px;
+        height: 350px;
+    }
+    div#banner{
+        height: 350px;
+        width:calc(100% - 30px);
+    }
+
 }
