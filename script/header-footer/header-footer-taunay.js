@@ -42,6 +42,7 @@ function carregamento(){
                             <p>Lista telefonica</p>
                             <p>Profissionais</p>
                         </div>
+                        <a href="../../index.html"><img id="home" src="../../image/home.png" alt="home"></a>
                 </div>
             </div>
         </nav>`
