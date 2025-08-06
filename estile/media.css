@@ -8,7 +8,7 @@ tablet : até 992px
 pc até 1200px
 grandes telas acima de 1200px */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     body{
         display: flex;
     }    
