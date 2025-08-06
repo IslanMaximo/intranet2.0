@@ -1,6 +1,3 @@
-//window.onload = carregar()
-
-//let footer = document.querySelector('footer.principal')
 
 
 function menu(mn){
