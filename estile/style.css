@@ -18,7 +18,7 @@
 }
 /*----------------------------header------------------------------------*/
 header{
-    width: 100vw;
+    width: 100%;
     background-color: rgba(128, 128, 128, 0.600);
 }
 div#img{
@@ -36,6 +36,7 @@ div#img img{
 }
 div.menu{
     display: none;
+    width: 100%;
 }
 div.menu p{
     font-family: 'Courier New', Courier, monospace;
@@ -53,6 +54,7 @@ div.menu p:hover{
     cursor: pointer;
 }
 div.smenut, div.smenus, div.smenuc, div.smenuj, div.smenubm, div.smenupm{
+    width: 100%;
     display: none;
     font-size: 0.8em;
     background-color: rgba(143, 143, 143, 0.600);

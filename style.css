@@ -3,41 +3,21 @@
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
 }
-
 header{
-    width: 100vw;
-    background-color: rgba(128, 128, 128, 0.600);
-}
-div#img{
-    padding: 7px 0px;
+    
+    display: flex;
     width: 100%;
-    display: block;
-    margin: auto;
-}header div#img:hover{
-    background-color: rgba(143, 143, 143, 0.600);
-    cursor: pointer;
 }
-div#img img{
-    margin: auto;
-    display: block;
+nav{
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.582);
 }
-div.menu{
+nav div#unidades{
     display: none;
 }
-div.menu p{
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
-    text-align: center;
-    margin: 0%;
-    color: white;
-    padding: 5px;
-}
 
-div.menu p:hover{
-    color: rgb(255, 213, 99);
-    font-size: 1.2em;
-    background-color: rgba(143, 143, 143, 0.600);
-    cursor: pointer;
-}
 div.smenut, div.smenus, div.smenuc, div.smenuj, div.smenubm, div.smenupm{
     display: none;
     font-size: 0.8em;

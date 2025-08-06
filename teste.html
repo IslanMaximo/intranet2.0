@@ -8,11 +8,11 @@
 </head>
 <body>
     <header>
-        <div id="img" onclick="menu('menu')">
-            <img src="image/menu.png">
-        </div>
-        <div id="unidades">
-            <div class="menu">
+        <nav>
+            <div id="img" onclick="menu('menu')">
+                <img src="image/menu.png">
+            </div>
+            <div id="unidades">
                 <p id="menut" onclick="menu('taunay')">Taunay</p>
                     <div class="smenut">
                         <p>Lista telefonica</p>
@@ -44,56 +44,17 @@
                         <p>Profissionais</p>
                     </div>
             </div>
-        </div>
+        </nav>
     </header>
     <script>
         function menu(mn){
-            let menu = document.querySelector('div.menu');
-            
-            if(mn == 'menu' && menu.style.display == 'block'){
-                menu.style.display = 'none'
-            }else{
-                menu.style.display = 'block'
+            let unidades = document.querySelector('nav div#unidades')
+            if(mn == "menu" && unidades.style.display == 'none'){
+                console.log('ok')
+                unidades.style.display = 'block'
             }
-            //sub menu taunay-------------------------
-            if(mn == 'taunay' && document.querySelector('div.smenut').style.display == 'none'){
-                document.querySelector('div.smenut').style.display = 'block'
-            }else{
-                document.querySelector('div.smenut').style.display = 'none'
-            }
-            //sub menu sete-------------------------
-            if(mn == 'sete' && document.querySelector('div.smenus').style.display == 'none'){
-                document.querySelector('div.smenus').style.display = 'block'
-            }else{
-                document.querySelector('div.smenus').style.display = 'none'
-            }
-            //sub menu cabral-------------------------
-            if(mn == 'cabral' && document.querySelector('div.smenuc').style.display == 'none'){
-                document.querySelector('div.smenuc').style.display = 'block'
-            }else{
-                document.querySelector('div.smenuc').style.display = 'none'
-            }
-            //sub barigui men-------------------------
-            if(mn == 'bariguim' && document.querySelector('div.smenubm').style.display == 'none'){
-                document.querySelector('div.smenubm').style.display = 'block'
-            }else{
-                document.querySelector('div.smenubm').style.display = 'none'
-            }
-            //sub menu juveve-------------------------
-            if(mn == 'juveve' && document.querySelector('div.smenuj').style.display == 'none'){
-                document.querySelector('div.smenuj').style.display = 'block'
-            }else{
-                document.querySelector('div.smenuj').style.display = 'none'
-            }
-            
-            //sub menu patio men-------------------------
-            if(mn == 'patiom' && document.querySelector('div.smenupm').style.display == 'none'){
-                document.querySelector('div.smenupm').style.display = 'block'
-            }else{
-                document.querySelector('div.smenupm').style.display = 'none'
-            }
-            
         }
+            
     </script>
 </body>
 </html>
