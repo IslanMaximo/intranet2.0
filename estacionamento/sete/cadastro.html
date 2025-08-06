@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estyle/estyle.css">
+    <title>🚗 Cadastro</title>
+</head>
+<body>
+    
+    <main>
+        <div>
+            <form class="entrada">
+                <fieldset>
+                    <legend>
+                        Cadastro de Veiculo
+                    </legend>
+                    <input type="text" name="placa" id="placa" placeholder="Digite a placa do veiculo" maxlength="7">
+                    <input type="text" name="cadastro-modelo" id="cadastro-modelo" list="lscadastro-modelo" placeholder="Modelo do veiculo">
+                    <datalist id="lscadastro-modelo">
+                            <option>Argo - Fiat</option>
+                            <option>Astra - Chevrolet</option>
+                            <option>Auris - Toyota</option>
+                            <option>Basalt - Citroën</option>
+                            <option>Blazer - Chevrolet</option>
+                            <option>Bravo - Fiat</option>
+                            <option>C3 - Citroën</option>
+                            <option>Camaro - Chevrolet</option>
+                            <option>Captur - Renault</option>
+                            <option>Civic - Honda</option>
+                            <option>City - Honda</option>
+                            <option>Corolla - Toyota</option>
+                            <option>Corolla Cross - Toyota</option>
+                            <option>Creta - Hyundai</option>
+                            <option>Cruze - Chevrolet</option>
+                            <option>Duster - Renault</option>
+                            <option>Fiorino - Fiat</option>
+                            <option>Fit - Honda</option>
+                            <option>Fastback - Fiat</option>
+                            <option>Frontier - Nissan</option>
+                            <option>Fielder - Toyota</option>
+                            <option>Gol - Volkswagen</option>
+                            <option>HB20 - Hyundai</option>
+                            <option>HB20S - Hyundai</option>
+                            <option>Hilux - Toyota</option>
+                            <option>HR-V - Honda</option>
+                            <option>Ka - Ford</option>
+                            <option>Kicks - Nissan</option>
+                            <option>Kwid - Renault</option>
+                            <option>Logan - Renault</option>
+                            <option>L200 - Mitsubishi</option>
+                            <option>Mobi - Fiat</option>
+                            <option>Montana - Chevrolet</option>
+                            <option>Nivus - Volkswagen</option>
+                            <option>Onix - Chevrolet</option>
+                            <option>Onix Plus - Chevrolet</option>
+                            <option>Oroch - Renault</option>
+                            <option>Parati - Volkswagen</option>
+                            <option>Polo - Volkswagen</option>
+                            <option>Pulse - Fiat</option>
+                            <option>Ranger - Ford</option>
+                            <option>Renegade - Jeep</option>
+                            <option>Sandero - Renault</option>
+                            <option>Saveiro - Volkswagen</option>
+                            <option>Scudo - Fiat</option>
+                            <option>Sentra - Nissan</option>
+                            <option>S10 - Chevrolet</option>
+                            <option>Spin - Chevrolet</option>
+                            <option>Strada - Fiat</option>
+                            <option>Taos - Volkswagen</option>
+                            <option>T-Cross - Volkswagen</option>
+                            <option>Tiggo 5X - Caoa Chery</option>
+                            <option>Tiggo 7 - Caoa Chery</option>
+                            <option>Tiggo 8 - Caoa Chery</option>
+                            <option>Toro - Fiat</option>
+                            <option>Uno - Fiat</option>
+                            <option>Versa - Nissan</option>
+                            <option>Virtus - Volkswagen</option>
+                            <option>Voyage - Volkswagen</option>
+                    </datalist>
+                    <input type="date" name="cadastro-data" id="cadastro-data"></p>
+                    <input type="button" value="Cadastrar ✍️" onclick="cadastrar()">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+   
+   <footer>
+        <abbr title="Entrada estacionamento"><a href="entrada.html"><img src="../../image/estacionamento-entrada.png" alt="Informatica"></a></abbr>
+        <abbr title="HOME"><a href="../../index.html"><img src="../../image/home.png" alt="HOME"></a></abbr>
+        <abbr title="Saída Estacionamento"><a href="saida.html"><img src="../../image/estacionamento-saida.png" alt="Informatica"></a></abbr>
+    </footer>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
