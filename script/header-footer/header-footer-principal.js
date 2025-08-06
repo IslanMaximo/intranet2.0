@@ -13,7 +13,7 @@ let header = document.querySelector('header')
         }else{
             menu.style.display = 'inline-block'
             header.style.width ='96px'
-            header.style.height ='310px'
+            header.style.height ='340px'
             header.style.background = 'rgba(128, 128, 128, 0.900)'
 
         }
