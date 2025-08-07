@@ -13,7 +13,7 @@ function carregamento(){
                     <p id="menut" onclick="menu('taunay')">Taunay</p>
                         <div class="smenut">
                             <p><a href="../unidades/taunay/lista.tel.html">Lista telefonica</a></a></p>
-                            <p><a href="">Profissionais</a></p>
+                            <p><a href="../unidades/taunay/profissionais-t.pdf">Profissionais</a></p>
                         </div>
                     <p onclick="menu('sete')">Sete</p>
                         <div class="smenus">
