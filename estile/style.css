@@ -88,14 +88,11 @@ iframe{
     height: 100vh;
 }
 div#button-park{
-    position: fixed;
     width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
 }
 input.park{
-    display: block;
+    display: inline-block;
     margin: 30px auto;
     width: 50%;
     height: 100px;
@@ -105,8 +102,7 @@ input.park{
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.87);
 }
 input.park:hover{
-    background-color: green;
-    color: red;
+    background-color: rgb(199, 199, 199);
 }
 
 /* ----------footer-----------*/

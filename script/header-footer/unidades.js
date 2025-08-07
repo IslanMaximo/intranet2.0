@@ -1,9 +1,7 @@
 window.onload = carregamento()
 let banner = document.querySelector('div#banner')
 function carregamento(){
-    let header = document.querySelector('header.taunay')
-    let footer = document.querySelector('footer.taunay')
-
+    let header = document.querySelector('header.unidades')
     //header----------------------------------------
     header.innerHTML = `
         <nav>
@@ -14,8 +12,8 @@ function carregamento(){
                 <div class="menu">
                     <p id="menut" onclick="menu('taunay')">Taunay</p>
                         <div class="smenut">
-                            <p><a href="unidades/taunay/lista.tel.html">Lista telefonica</a></p>
-                            <p>Profissionais</p>
+                            <p><a href="unidades/taunay/lista.tel.html">Lista telefonica</a></a></p>
+                            <p><a href="">Profissionais</a></p>
                         </div>
                     <p onclick="menu('sete')">Sete</p>
                         <div class="smenus">
@@ -32,19 +30,21 @@ function carregamento(){
                             <p>Lista telefonica</p>
                             <p>Profissionais</p>
                         </div>
-                    <p onclick="menu('bariguim')">Bariguim</p>
+                    <p onclick="menu('bariguim')">Bariguim Men</p>
                         <div class="smenubm">
                             <p>Lista telefonica</p>
                             <p>Profissionais</p>
                         </div>
-                    <p onclick="menu('patiom')">Pátio</p>
+                    <p onclick="menu('patiom')">Pátio Men</p>
                         <div class="smenupm">
                             <p>Lista telefonica</p>
                             <p>Profissionais</p>
                         </div>
+                    <p><a href="../../estacionamento/principal.html">Park 🚘</a></p>
                         <a href="../../index.html"><img id="home" src="../../image/home.png" alt="home"></a>
                 </div>
             </div>
+            
         </nav>`
 }
 function menu(mn){
@@ -59,8 +59,8 @@ let header = document.querySelector('header')
             header.style.background = 'rgba(128, 128, 128, 0.600)'
         }else{
             menu.style.display = 'inline-block'
-            header.style.width ='96px'
-            header.style.height ='365px'
+            header.style.width ='150px'
+            header.style.height ='425px'
             header.style.background = 'rgba(128, 128, 128, 0.900)'
 
         }
