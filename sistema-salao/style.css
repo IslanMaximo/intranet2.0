@@ -17,6 +17,9 @@ header p:hover{
     background-color: rgb(182, 182, 182);
     cursor: pointer;
 }
+#menu{
+    display: none;
+}
 div.smenu{
     display: none;
     background-color: brown;
