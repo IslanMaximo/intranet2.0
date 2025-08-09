@@ -9,52 +9,44 @@
 <body>
     <header>
         <nav>
-            <div id="img" onclick="menu('menu')">
-                <img src="image/menu.png">
-            </div>
-            <div id="unidades">
-                <p id="menut" onclick="menu('taunay')">Taunay</p>
-                    <div class="smenut">
-                        <p>Lista telefonica</p>
-                        <p>Profissionais</p>
-                    </div>
-                <p onclick="menu('sete')">Sete</p>
-                    <div class="smenus">
-                        <p>Lista telefonica</p>
-                        <p>Profissionais</p>
-                    </div>
-                <p onclick="menu('cabral')">Cabral</p>
-                    <div class="smenuc">
-                        <p>Lista telefonica</p>
-                        <p>Profissionais</p>
-                    </div>
-                <p onclick="menu('juveve')">Juveve</p>
-                    <div class="smenuj">
-                        <p>Lista telefonica</p>
-                        <p>Profissionais</p>
-                    </div>
-                <p onclick="menu('bariguim')">Bariguim</p>
-                    <div class="smenubm">
-                        <p>Lista telefonica</p>
-                        <p>Profissionais</p>
-                    </div>
-                <p onclick="menu('patiom')">Pátio</p>
-                    <div class="smenupm">
-                        <p>Lista telefonica</p>
-                        <p>Profissionais</p>
-                    </div>
-            </div>
+            <p onclick="menu('agenda')">AGENDAS / COMANDAS</p>
+                <div class="smenu" id="agenda">
+                    <p>Agenda Profissionais</p>
+                    <p>Abertura de Comanda</p>
+                    <p>Historico da Comanda</p>
+                </div>
+            <p onclick="menu('interno')">CONTROLE INTERNO</p>
+                <div class="smenu" id="interno">
+                    <p onclick="menu('clientes')">Clientes</p>
+                        <div class="smenu2" id="clientes">
+                            <p>Cadastro de Clientes</p>
+                            <p>Clientes em Débito</p>
+                            <p>Clientes com Crédito</p>
+                        </div>
+                    <p onclick="menu('profissionais')">Profissionais</p>
+                        <div class="smenu2" id="profissionais">
+                            <p>Todos os Profissionais</p>
+                            
+                        </div>
+                    <p onclick="menu('produtos')">Produtos</p>
+                </div>            
         </nav>
-    </header>
+    </header>    
+    <main>
+        conteudo
+    </main>
+    <footer>
+
+    </footer>
     <script>
         function menu(mn){
-            let unidades = document.querySelector('nav div#unidades')
-            if(mn == "menu" && unidades.style.display == 'none'){
-                console.log('ok')
-                unidades.style.display = 'block'
-            }
-        }
-            
+            let menu = document.querySelector(`div#${mn}`);
+            if(menu.style.display == 'none'){
+               menu.style.display = 'block';
+            }else{
+                menu.style.display = 'none';
+            }                
+        }   
     </script>
 </body>
 </html>

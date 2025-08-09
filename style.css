@@ -1,26 +1,26 @@
 @charset "UTF-8";
 *{
-    font-family: 'Courier New', Courier, monospace;
-    text-transform: uppercase;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: black;
 }
 header{
-    
-    display: flex;
-    width: 100%;
-}
-nav{
+    background-color: grey;
     text-align: center;
-    width: 100%;
-    flex-direction: column;
-    background-color: rgba(128, 128, 128, 0.582);
 }
-nav div#unidades{
-    display: none;
+header p{
+    padding: 10px;
 }
-
-div.smenut, div.smenus, div.smenuc, div.smenuj, div.smenubm, div.smenupm{
+header p:hover{
+    background-color: rgb(182, 182, 182);
+    cursor: pointer;
+}
+div.smenu{
     display: none;
-    font-size: 0.8em;
-    background-color: rgba(143, 143, 143, 0.600);
-    
+    background-color: brown;
+}
+div.smenu2{
+    background-color: aqua;
 }
