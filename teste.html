@@ -26,7 +26,7 @@
                     <p onclick="menu('profissionais')">Profissionais</p>
                         <div class="smenu2" id="profissionais">
                             <p>Todos os Profissionais</p>
-                            
+
                         </div>
                     <p onclick="menu('produtos')">Produtos</p>
                 </div>            
@@ -41,11 +41,12 @@
     <script>
         function menu(mn){
             let menu = document.querySelector(`div#${mn}`);
+            console.log(mn)
             if(menu.style.display == 'none'){
-               menu.style.display = 'block';
+                menu.style.display = 'block';
             }else{
                 menu.style.display = 'none';
-            }                
+            }              
         }   
     </script>
 </body>

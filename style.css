@@ -22,5 +22,6 @@ div.smenu{
     background-color: brown;
 }
 div.smenu2{
+    display: none;
     background-color: aqua;
 }
