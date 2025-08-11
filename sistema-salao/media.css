@@ -16,7 +16,7 @@ grandes telas acima de 1200px */
         display: inline-block;
     }
     .menu{
-        border-radius: 10px;
+        border-radius: 15px;
         background-color: rgba(128, 128, 128, 0.733);
     }
     main{

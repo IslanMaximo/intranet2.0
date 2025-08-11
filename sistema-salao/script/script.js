@@ -1,3 +1,4 @@
+
 function carregar(){
 //link CSS----------------------------------------------
     document.querySelector('head').innerHTML = `
@@ -10,9 +11,15 @@ function carregar(){
                 <div class="menu" id="menu">
                     <p onclick="menu('agenda')">&#128203; AGENDAS / COMANDAS</p>
                         <div class="smenu" id="agenda">
-                            <p> Agenda Profissionais</p>
-                            <p> Abertura de Comanda</p>
-                            <p> Historico da Comanda</p>
+                            <a href="agendas/abertura.comanda.html">
+                                <p> Agenda Profissionais</p>
+                            </a>
+                            <a href="agendas/agenda.profissionais.html">
+                                <p> Abertura de Comanda</p>
+                            </a>
+                            <a href="">
+                                <p> Historico da Comanda</p>
+                            </a>
                         </div>
                     <p onclick="menu('interno')">&#127970; CONTROLE INTERNO</p>
                         <div class="smenu" id="interno">
