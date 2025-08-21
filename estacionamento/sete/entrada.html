@@ -8,13 +8,13 @@
 </head>
 <body>
     <h1>
-        Entrada de veiculos Taunay
+        Entrada de veiculos Sete
     </h1>
     <main>
-        <form class="entrada" autocomplete="on">
-            <input type="text" name="placa" id="placa" placeholder="Digite a placa do veiculo" maxlength="7">
-            <input type="number" name="nvaga" id="nvaga" placeholder="Numero da vaga" maxlength="2">
-            <input type="button" value="Enviar" onclick="eenviar()">
+        <form action="include/entrada.php" class="entrada" autocomplete="off">
+            <input type="text" name="placa" id="placa" placeholder="Digite a placa do veiculo" minlength="6" maxlength="7" required>
+            <input type="number" name="vaga" id="nvaga" placeholder="Numero da vaga" maxlength="2" required>
+            <input type="submit" value="Enviar">
         </form>
         <p><a href="cadastro.html"> Realziar cadastro </a></p>
         

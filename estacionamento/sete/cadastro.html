@@ -10,76 +10,71 @@
     
     <main>
         <div>
-            <form class="entrada">
+            <form class="entrada" action="include/banco.php" method="post" autocomplete="off">
                 <fieldset>
                     <legend>
                         Cadastro de Veiculo
                     </legend>
-                    <input type="text" name="placa" id="placa" placeholder="Digite a placa do veiculo" maxlength="7">
-                    <input type="text" name="cadastro-modelo" id="cadastro-modelo" list="lscadastro-modelo" placeholder="Modelo do veiculo">
-                    <datalist id="lscadastro-modelo">
-                            <option>Argo - Fiat</option>
-                            <option>Astra - Chevrolet</option>
-                            <option>Auris - Toyota</option>
-                            <option>Basalt - Citroën</option>
-                            <option>Blazer - Chevrolet</option>
-                            <option>Bravo - Fiat</option>
-                            <option>C3 - Citroën</option>
-                            <option>Camaro - Chevrolet</option>
-                            <option>Captur - Renault</option>
-                            <option>Civic - Honda</option>
-                            <option>City - Honda</option>
-                            <option>Corolla - Toyota</option>
-                            <option>Corolla Cross - Toyota</option>
-                            <option>Creta - Hyundai</option>
-                            <option>Cruze - Chevrolet</option>
-                            <option>Duster - Renault</option>
-                            <option>Fiorino - Fiat</option>
-                            <option>Fit - Honda</option>
-                            <option>Fastback - Fiat</option>
-                            <option>Frontier - Nissan</option>
-                            <option>Fielder - Toyota</option>
-                            <option>Gol - Volkswagen</option>
-                            <option>HB20 - Hyundai</option>
-                            <option>HB20S - Hyundai</option>
-                            <option>Hilux - Toyota</option>
-                            <option>HR-V - Honda</option>
-                            <option>Ka - Ford</option>
-                            <option>Kicks - Nissan</option>
-                            <option>Kwid - Renault</option>
-                            <option>Logan - Renault</option>
-                            <option>L200 - Mitsubishi</option>
-                            <option>Mobi - Fiat</option>
-                            <option>Montana - Chevrolet</option>
-                            <option>Nivus - Volkswagen</option>
-                            <option>Onix - Chevrolet</option>
-                            <option>Onix Plus - Chevrolet</option>
-                            <option>Oroch - Renault</option>
-                            <option>Parati - Volkswagen</option>
-                            <option>Polo - Volkswagen</option>
-                            <option>Pulse - Fiat</option>
-                            <option>Ranger - Ford</option>
-                            <option>Renegade - Jeep</option>
-                            <option>Sandero - Renault</option>
-                            <option>Saveiro - Volkswagen</option>
-                            <option>Scudo - Fiat</option>
-                            <option>Sentra - Nissan</option>
-                            <option>S10 - Chevrolet</option>
-                            <option>Spin - Chevrolet</option>
-                            <option>Strada - Fiat</option>
-                            <option>Taos - Volkswagen</option>
-                            <option>T-Cross - Volkswagen</option>
-                            <option>Tiggo 5X - Caoa Chery</option>
-                            <option>Tiggo 7 - Caoa Chery</option>
-                            <option>Tiggo 8 - Caoa Chery</option>
-                            <option>Toro - Fiat</option>
-                            <option>Uno - Fiat</option>
-                            <option>Versa - Nissan</option>
-                            <option>Virtus - Volkswagen</option>
-                            <option>Voyage - Volkswagen</option>
-                    </datalist>
-                    <input type="date" name="cadastro-data" id="cadastro-data"></p>
-                    <input type="button" value="Cadastrar ✍️" onclick="cadastrar()">
+
+                    <input type="text" name="cadastro-placa" id="cadastro-placa" placeholder="PLACA" required minlength="6" maxlength="7">
+
+                    <input type="text" name="cadastro-fabricante" id="icadastro-fabricante" list="lscadastro-fabricante" placeholder="FABRICANTE" required>
+                        <datalist id="lscadastro-fabricante">
+                            <option value="Audi">
+                            <option value="BMW">
+                            <option value="Chevrolet">
+                            <option value="Chrysler">
+                            <option value="Citroën">
+                            <option value="Dodge">
+                            <option value="Fiat">
+                            <option value="Ford">
+                            <option value="Honda">
+                            <option value="Hyundai">
+                            <option value="Jaguar">
+                            <option value="Jeep">
+                            <option value="Kia">
+                            <option value="Lamborghini">
+                            <option value="Land Rover">
+                            <option value="Lexus">
+                            <option value="Mazda">
+                            <option value="Mercedes-Benz">
+                            <option value="Mitsubishi">
+                            <option value="Nissan">
+                            <option value="Peugeot">
+                            <option value="Porsche">
+                            <option value="Renault">
+                            <option value="Subaru">
+                            <option value="Suzuki">
+                            <option value="Tesla">
+                            <option value="Toyota">
+                            <option value="Volkswagen">
+                            <option value="Volvo">
+                        </datalist>
+
+                    <input type="text" name="cadastro-modelo" id="icadastro-modelo" placeholder="MODELO" required>
+
+                    <label for="icadastro-cor">Cor</label>
+                        <select name="cadastro-cor" id="icadastro-cor" required>
+                            <option>Preto</option>
+                            <option>Branco</option>
+                            <option>Prata</option>
+                            <option>Cinza</option>
+                            <option>Vermelho</option>
+                            <option>Azul</option>
+                            <option>Verde</option>
+                            <option>Marrom</option>
+                            <option>Bege</option>
+                            <option>Amarelo</option>
+                            <option>Laranja</option>
+                            <option>Dourado</option>
+                            <option>Roxo</option>
+                            <option>Rosa</option>
+                            <option>Outro</option>
+                        </select>
+                        <input type="number" name="vaga" id="nvaga" placeholder="Numero da vaga" maxlength="2" required>       
+
+                    <input type="submit" value="Cadastrar ✍️" onclick="cadastrar()">
+
                 </fieldset>
             </form>
         </div>
