@@ -8,25 +8,25 @@
     $modelo = $_POST['cadastro-modelo'];
     $vaga = $_GET['vaga'];
     $cor = $_POST['cadastro-cor'];
-    $dataAtual = date('Y-m-d');
+    $data = date('Y-m-d');
     $horaAtual = date('H:i:s');
 
 
     $buscaPlaca = $banco->query("select * from veiculos where placa = '$placa'");
 
     if($buscaPlaca->fetch_object() == ''){
-        ///////////////entrada de dadis veiculos/////////////////////////
-        $insert = $banco-> query("insert into veiculos (`placa`,fabricante, modelo, cor, date) value ('$placa', '$fabricante', '$modelo', '$cor', '$dataAtual')");
+        ///////////////INSERT VEICULO///////////////////////////
+    $insertv = $banco-> query("insert into veiculos (`placa`,fabricante, modelo, cor, date) value ('$placa', '$fabricante', '$modelo', '$cor', '$data')");
 
-        //////////////////////Registro de dado de patio entrada//////////////////////
-        $insert = $banco-> query("insert into patio (id, placa,date, hora, definicao, vaga) value ('', '$placa', '$dataAtual', '$horaAtual', 'E', '$vaga' )");
-        header("location: entrada.html");
-        exit;
+    ////////////////INSERT PATIO/////////////////////////////
+    $insertp = $banco -> query("insert into patio (id, placa,date, hora_e, hora_s, vaga) value ('', '$pesquisa', '$data', '$horaAtual', '', '$vaga' )")
+    echo ("<script> window.alert('Veiculo Cadastrado e Estacionado com sucesso !')</script>")
+
     }else{
         //////////////////////Registro de dado de patio entrada//////////////////////
-        $insert = $banco-> query("insert into patio (id, placa,date, hora, definicao, vaga) value ('', '$placa', '$dataAtual', '$horaAtual', 'E', '$vaga' )");
-        header("location: entrada.html");
-        exit;
+        $insertp = $banco -> query("insert into patio (id, placa,date, hora_e, hora_s, vaga) value ('', '$pesquisa', '$data', '$horaAtual', '', '$vaga' )")
+            echo ("<script> window.alert('Veiculo Estacionado com sucesso !')</script>")
+
     }
 
 

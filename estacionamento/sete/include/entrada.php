@@ -11,9 +11,9 @@
     $buscaPlaca = $banco->query("select * from veiculos where placa = '$placa'");
 
     if($buscaPlaca->fetch_object() != ''){
-        $insert = $banco-> query("insert into patio (id, placa,date, horaE, vaga) value ('', '$placa', '$dataAtual', 'E $horaAtual','', '$vaga' )");
-        header("location: entrada.html");
-        exit;
+        $insert = $banco-> query("insert into patio (id, placa,date, hora_e, hora_s, vaga) value ('', '$placa', '$data', '$horaAtual', '', '$vaga' )");
+        echo ("<script> window.alert('Veiculo Cadastrado e Estacionado com sucesso !')</script>")
+
     }else{
         header("location: cadastro.html");
         exit;
